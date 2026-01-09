@@ -1,14 +1,19 @@
 {
-  "name": "parcel-vanilla-starter",
+  "name": "smart-vanilla",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "source": "src/index.html",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
   },
-  "dependencies": {},
   "devDependencies": {
-    "parcel": "^2.14.0"
+    "autoprefixer": "^10.4.23",
+    "parcel": "^2.14.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19"
   }
 }

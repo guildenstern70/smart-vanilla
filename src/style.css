@@ -1,8 +1,19 @@
-html {
-  color-scheme: light dark;
-  font-family: system-ui;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.nav-link {
+    @apply px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-100 transition-colors cursor-pointer;
+}
+
+.nav-link-active {
+    @apply bg-indigo-100 text-indigo-700;
 }
